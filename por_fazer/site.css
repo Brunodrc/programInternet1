@@ -1,0 +1,16 @@
+h1 {
+    background-color: #2f3559;
+    color: #e394a7;
+    text-align: center;
+}
+body {
+    background: hsl(29, 35%, 98%);
+    font-size: 120%;
+}
+p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
