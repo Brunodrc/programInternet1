@@ -1,0 +1,12 @@
+
+.navbar-light{
+    margin: auto;
+    background-color: #99d3fd;
+}
+.card{
+    border: 0ch;
+}
+
+#parteBaixo{
+    border-bottom: 1px solid gray;
+}

@@ -1,0 +1,12 @@
+header,footer{
+    background-color: aqua;
+}
+.col-md-6{
+    background-color: rgb(215, 224, 224);
+} 
+.col-md-4{
+    background-color: rgb(135, 229, 229);
+} 
+.col-md-2{
+    background-color: rgb(7, 248, 236);
+} 
