@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.grid{
+    display: grid;
+}
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logo {
+    grid-area: logo;
+}
+.nav {
+    grid-area: nav;
+}
+.sidenav {
+    grid-area: sidenav;
+}
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.grid-main{
+    grid:
+    "sidenav logo nav" 
+    "sidenav content content"
+    "sidenav footer footer"
+    / 1fr 1fr 2fr; 
+}
+@media (max-width:965px){
+    .grid-main{
+        grid:
+        "sidenav" 
+        "logo"
+        "nav"
+        "content"
+        "footer"; 
+    }    
+}
+.iconesSidenav{
+    max-width:90px;
+}
+.sidenav-1{
+    border-bottom: 1px solid black;
+}

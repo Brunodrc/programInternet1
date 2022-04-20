@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+nav {
+    background: hsl(198, 50%, 53%);
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    line-height: 80px;
+    padding: 7px 13px;
+    cursor: pointer;
+    color: aqua;
+    border-radius: 3px;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: aqua;
+    font-size: 20x;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a:hover {
+    background-color: azure;
+    transition: .5s;
+    color: blue;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: azure;
+    float: right;
+    line-height: 80px;
+    margin-right: 0px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+@media (max-width:965px){
+
+    .logo{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+
+    .grid-template-columns-5 ul{
+        grid-row: auto;
+    }
+
+    nav ul li {
+        display: grid;
+        margin: 50px 0;
+        line-height: 30px;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover{
+        background: azure;
+        transition: .5s;
+        color: blue;
+        padding: 20px 40px;
+    }
+   
+}
+.grid {
+    display: grid;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.grid-template-columns {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    background: hsl(198, 74%, 53%);
+}
+.grid-template-columns-2{
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #0fb7ff;
+    max-width: 100%;
+}
+.grid-template-columns-3{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    align-items: center;
+    background: white;
+}
+.grid-template-columns-4{
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    background: hsl(198, 30%, 53%);
+}
+.item {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+.item-2 {
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.item-3{
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+#imagemCab{
+    max-width: 600px;
+}
+.navfooter{
+    font-family: sans-serif;
+    background: hsl(198, 30%, 53%);
+}   
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    padding: 15px;
+    background: #02E0E8;
+    max-width: 100%;
+}
+
+footer{
+    border-bottom: 2px solid black;
+}

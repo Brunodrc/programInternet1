@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* CSS rules to specify families
+
+font-family: 'Inter', sans-serif; */
+
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-left {
+    display: flex;
+    background-color: #3730A3;
+    justify-content: center;
+}
+
+.container-right {
+    display: flex;
+    justify-content: center;
+}
+
+.central {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-left, .left-secondary-title {
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    width: 100%;
+}
+
+.right-text {
+    font-family: 'Inter', sans-serif;
+    color: #4B5563;
+}
+
+.container-left, .container-right {
+    width: 100vw;
+    height: 50vh;
+}
+
+.left-title, .title-right {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.above-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.myForm {
+    width: 100%;
+}
+.myForm form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    
+}
+
+.field-email, .field-passwd {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.field-email input, .field-passwd input {
+    padding: 1rem;
+}
+
+#rescue {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-button input {
+    width: 100%;
+    background: #4F46E5;
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    appearance: push-button;
+}
+
+.question-container {
+    background-color: lightgray;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.question-template {
+    font-family: 'Inter', sans-serif;
+    margin: 1.5rem 0 1.5rem 0;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid darkgray;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+.question-field {
+    padding-top: 2rem;
+    width: 100%;
+    height: 50vh;
+}
+
+.question-field textarea {
+    padding: 1rem;
+    width: 90%;
+    height: 70%;
+}
+.grade {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.above-number {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#bad {
+    color: red;
+}
+
+#great {
+    color: green;
+
+}
+
+.number-row button {
+    color: #ffffff;
+    font-size: .75rem;
+    padding: .75rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.number-row button:nth-child(1) {
+    background-color: #B72224;
+}
+
+.number-row button:nth-child(2) {
+    background-color: #D52029;
+}
+
+.number-row button:nth-child(3) {
+    background-color: #E95223;
+}
+
+.number-row button:nth-child(4) {
+    background-color: #EA6F22;
+}
+
+.number-row button:nth-child(5) {
+    background-color: #F6A726;
+}
+
+.number-row button:nth-child(6) {
+    background-color: #FDC729;
+}
+
+.number-row button:nth-child(7) {
+    background-color: #EBDB0A;
+}
+
+.number-row button:nth-child(8) {
+    background-color: #E5E044;
+}
+
+.number-row button:nth-child(9) {
+    background-color: #C2D234;
+}
+
+.number-row button:nth-child(10) {
+    background-color: #AEC93C;
+}
+
+.number-row button:nth-child(11) {
+    background-color: #66B44E;
+}
+
+@media (min-width: 900px) {
+
+    .container-main {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .container-left, .container-right {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .central {
+        display: flex;
+        width: 75%;
+        flex-wrap: wrap;
+    }
+
+    
+
+    .text-left {
+        font-family: 'Inter', sans-serif;
+        font-size: 150%;
+        line-height: 2;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .number-row button {
+        color: #ffffff;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .question-field textarea {
+        margin-left: 2.5rem;
+        width: 90%;
+        height: 70%;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .question-template {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .number-row {
+        display: flex;
+        gap: .25rem;
+        width: 100%;
+    }
+
+    .number-row button {
+        padding: .5rem;
+    }
+
+    .question-field textarea {
+        margin-left: 0;
+        width: 90%;
+        height: 70%;
+    }
+}
+
+

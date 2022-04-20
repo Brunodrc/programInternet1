@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.barranav{
+    background: hsl(198, 50%, 90%);
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 7px 13px;
+    cursor: pointer;
+    border-radius: 3px;
+    
+}
+#logonav{
+    color: hsl(230, 70%, 51%);
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 35px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.listabarranav{
+    float: right;
+    margin-right: 20px;
+}
+
+.elementoLista{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.linkLista{
+    color: #032EFF;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.linkLista:hover{
+    background-color: azure;
+    transition: .5s;
+    color: blue;
+}
+#logonav:hover{
+    background-color: hsl(180, 80%, 87%);
+    transition: .5s;
+    color: hsl(240, 100%, 10%); 
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: azure;
+    float: right;
+    line-height: 80px;
+    margin-right: 0px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:965px){
+
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    
+    .checkbtn{
+        display: block;
+        right: 20px;
+    }
+
+    .listabarranav{
+        position: fixed;
+        width: 100%;
+        width: 100vh;
+        background: hsl(198, 50%, 90%);
+        top: 80px;
+        left: -300%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .elementoLista {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+
+    .linkLista {
+        font-size: 30px;
+    }
+
+    .linkLista:hover{
+        background: azure;
+        transition: .5s;
+        color: blue;
+        padding: 20px 40px;
+    }
+
+    #check:checked ~ ul{
+        left: 0px;
+    }
+
+}

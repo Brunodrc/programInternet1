@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+/*
+font-family: 'Mochiy Pop One', sans-serif;
+*/
+/* resertar basicamente o design
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, spam{
+    margin: 0;
+    color: #888;
+}
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+*/
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+/*
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    padding: 10px;
+}
+@media (min-width: 600px){
+    nav { padding: 20px;}
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+a:hover {
+    color: hsl(350, 45%, 60%);
+}
+
+nav.flexbox { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    
+    ul { 
+      display: flex; 
+      align-items: center; 
+    
+    ul li { 
+      margin-right: 20px; 
+      &:last-child { 
+        margin-right: 0px; 
+       
+    } 
+}
+*/
+
+nav.flexbox { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    
+    ul { 
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; 
+      
+      a {
+        position: relative
+        display: inline-block;
+        padding: 1em;
+        text-decoration:none;
+        color: #ffff;
+        &:hover {
+            color: brown;
+        }
+      }
+    }
+}
